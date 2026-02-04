@@ -1,0 +1,153 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(2, 6, 23, 0.8);
+}
+
+.navbar a {
+  margin: 0 15px;
+  color: #cbd5f5;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #22c55e;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-login {
+  background: transparent;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-text span {
+  color: #22c55e;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #cbd5f5;
+}
+
+.hero-buttons button {
+  margin-right: 15px;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: #22c55e;
+  color: #022c22;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+/* MOCKUP */
+.hero-mockup {
+  display: grid;
+  grid-template-columns: repeat(2, 180px);
+  gap: 20px;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(34, 197, 94, 0.15);
+}
+
+.value {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.value.green {
+  color: #22c55e;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+  background: rgba(2, 6, 23, 0.7);
+}
+
+.feature {
+  max-width: 250px;
+  text-align: center;
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+  color: #22c55e;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}

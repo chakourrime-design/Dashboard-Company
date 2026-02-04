@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #022c22;
+}
+
+.sidebar h2 {
+  color: #22c55e;
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 12px;
+  color: #94a3b8;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover {
+  background: #022c22;
+  color: #22c55e;
+}
+
+/* Logout */
+.logout {
+  margin-top: auto;
+  padding: 12px;
+  border: 1px solid #22c55e;
+  background: transparent;
+  color: #22c55e;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background: #22c55e;
+  color: #022c22;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/* Contact Section */
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #022c22;
+}
+
+.contact-section h2 {
+  color: #22c55e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form */
+form label {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #022c22;
+  background: #020617;
+  color: #e5e7eb;
+  resize: none;
+}
+
+form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #22c55e;
+  color: #022c22;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  opacity: 0.85;
+}
+
+/* Success message */
+.success-message {
+  display: none;
+  margin-top: 15px;
+  color: #22c55e;
+  text-align: center;
+  font-weight: bold;
+}
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Finance | Company Dashboard</title>
+  <link rel="stylesheet" href="finance.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h2>Company<br>Dashboard</h2>
+    </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="dashboard_config.html">Dashboard</a>
+      <a href="sales.html">Ventes</a>
+      <a href="finance.html" class="active">Finance</a>
+      <a href="rh.html">RH</a>
+      <a href="settings.html">Paramètres</a>
+      <a href="features.html">Fonctionnalités</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="logout" onclick="logout()">Déconnexion</button>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <h1>Gestion Financière</h1>
+      <span class="user">👤 Admin</span>
+    </header>
+
+    <section class="finance-section">
+      <h2>Importer vos données financières</h2>
+      <div class="input-group">
+          <input type="file" id="financeFile" accept=".csv">
+          <button id="loadFinance">Charger les données</button>
+      </div>
+      <div id="financeTableContainer"></div>
+    </section>
+
+    <section class="charts-section">
+        <h2>Flux de Trésorerie</h2>
+        <div class="canvas-wrapper">
+            <canvas id="financeChart"></canvas>
+        </div>
+    </section>
+  </main>
+
+  <script src="finance.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ventes | Company Dashboard</title>
+  <link rel="stylesheet" href="sales.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h2>Company<br>Dashboard</h2>
+    </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="dashboard_config.html">Dashboard</a>
+      <a href="sales.html" class="active">Ventes</a>
+      <a href="finance.html">Finance</a>
+      <a href="rh.html">RH</a>
+      <a href="settings.html">Paramètres</a>
+      <a href="features.html">Fonctionnalités</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="logout">Déconnexion</button>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <h1>Analyse des Ventes</h1>
+      <span class="user">👤 Admin</span>
+    </header>
+
+    <section class="sales-section">
+      <h2>Importer vos données CSV</h2>
+      <div class="upload-box">
+        <input type="file" id="salesFile" accept=".csv">
+        <button id="loadSales">Charger les données</button>
+      </div>
+      
+      <div id="salesTableContainer"></div>
+    </section>
+
+    <section class="charts-section">
+      <h2>Visualisation Graphique</h2>
+      <div class="canvas-wrapper">
+        <canvas id="salesChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="sales.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>RH | Company Dashboard</title>
+  <link rel="stylesheet" href="rh.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h2>Company<br>Dashboard</h2>
+    </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="dashboard_config.html">Dashboard</a>
+      <a href="sales.html">Ventes</a>
+      <a href="finance.html">Finance</a>
+      <a href="rh.html" class="active">RH</a>
+      <a href="settings.html">Paramètres</a>
+      <a href="features.html">Fonctionnalités</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="logout" onclick="logout()">Déconnexion</button>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <h1>RH</h1>
+      <span class="user">👤 Admin</span>
+    </header>
+
+    <section class="rh-section">
+      <h2>Importer vos données RH</h2>
+      <input type="file" id="rhFile" accept=".csv">
+      <button id="loadRH">Charger</button>
+      <div id="rhTableContainer"></div>
+    </section>
+  </main>
+
+  <script src="rh.js"></script>
+</body>
+</html>
+

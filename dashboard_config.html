@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Global | Company Dashboard</title>
+    <link rel="stylesheet" href="dashboard_config.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h2>Company<br>Dashboard</h2>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="dashboard_config.html" class="active">Dashboard Global</a>
+            <a href="sales.html">Ventes</a>
+            <a href="finance.html">Finance</a>
+            <a href="rh.html">RH</a>
+            <a href="settings.html">Paramètres</a>
+            <a href="features.html">Fonctionnalités</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="logout" onclick="logout()">Déconnexion</button>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <h1 id="pageTitle">Configuration du Dashboard</h1>
+            <span class="user">👤 Admin</span>
+        </header>
+
+        <section class="section-box" id="configSection">
+            <h2>1. Importez vos données CSV</h2>
+            <form id="configForm">
+                <div class="input-grid">
+                    <div>
+                        <label>Données de Ventes</label>
+                        <input type="file" id="salesFile" accept=".csv" required>
+                    </div>
+                    <div>
+                        <label>Données de Finance</label>
+                        <input type="file" id="financeFile" accept=".csv" required>
+                    </div>
+                </div>
+                <button type="submit" style="margin-top: 20px;">Générer le Dashboard Global</button>
+            </form>
+        </section>
+
+        <section id="dashboardView" style="display: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
+                <h2 style="color: #22c55e; margin: 0;">Analyse Performance 2026</h2>
+                <button onclick="window.print()" class="btn-secondary">Exporter PDF</button>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card"><h3>Total Ventes</h3><p id="txtTotalSales">0</p></div>
+                <div class="stat-card"><h3>Revenu Total</h3><p id="txtTotalRev">0 €</p></div>
+                <div class="stat-card"><h3>Bénéfice Net</h3><p id="txtTotalBen">0 €</p></div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="section-box">
+                    <h2>Évolution des Ventes</h2>
+                    <div class="canvas-wrapper"><canvas id="chartSales"></canvas></div>
+                </div>
+                <div class="section-box">
+                    <h2>Analyse Financière (Rev vs Dep)</h2>
+                    <div class="canvas-wrapper"><canvas id="chartFinance"></canvas></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard_config.js"></script>
+</body>
+</html>

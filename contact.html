@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Company Dashboard</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo-wrapper">
+    <img src="logo.png" alt="Logo" class="logo-img">
+    <span class="logo-text"><h2>Company Dashboard</h2></span>
+  </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="dashboard_config.html">Dashboard</a>
+      <a href="sales.html">Ventes</a>
+      <a href="finance.html">Finance</a>
+      <a href="rh.html">RH</a>
+      <a href="settings.html">Paramètres</a>
+      <a href="features.html">Fonctionnalités</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <button class="logout" onclick="logout()">Déconnexion</button>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <header class="topbar">
+      <h1>Contact</h1>
+      <span class="user">👤 Admin</span>
+    </header>
+
+    <!-- Formulaire de contact -->
+    <section class="contact-section">
+      <h2>Envoyer un message</h2>
+
+      <form id="contactForm">
+        <label for="name">Nom</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="subject">Objet</label>
+        <input type="text" id="subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="6" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <p id="successMessage" class="success-message">Message envoyé avec succès !</p>
+    </section>
+
+  </main>
+
+  <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paramètres | Company Dashboard</title>
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo-wrapper">
+    <img src="logo.png" alt="Logo" class="logo-img">
+    <span class="logo-text"><h2>Company Dashboard</h2></span>
+  </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="dashboard_config.html">Dashboard</a>
+      <a href="sales.html">Ventes</a>
+      <a href="finance.html">Finance</a>
+      <a href="rh.html">RH</a>
+      <a href="settings.html" class="active">Paramètres</a>
+      <a href="features.html">Fonctionnalités</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="logout" onclick="logout()">Déconnexion</button>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <header class="topbar">
+      <h1>Paramètres</h1>
+      <span class="user">👤 Admin</span>
+    </header>
+
+    <!-- Sections -->
+    <section class="settings-grid">
+
+      <!-- Profil -->
+      <div class="card">
+        <h3>Profil utilisateur</h3>
+        <label>Nom</label>
+        <input type="text" value="Admin User" />
+
+        <label>Email</label>
+        <input type="email" value="admin@company.com" />
+
+        <button class="save">Enregistrer</button>
+      </div>
+
+      <!-- Sécurité -->
+      <div class="card">
+        <h3>Sécurité</h3>
+        <label>Mot de passe actuel</label>
+        <input type="password" />
+
+        <label>Nouveau mot de passe</label>
+        <input type="password" />
+
+        <button class="save">Changer mot de passe</button>
+      </div>
+
+      <!-- Préférences -->
+      <div class="card">
+        <h3>Préférences</h3>
+
+        <div class="toggle">
+          <span>Notifications email</span>
+          <input type="checkbox" checked />
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="settings.js"></script>
+</body>
+</html>
