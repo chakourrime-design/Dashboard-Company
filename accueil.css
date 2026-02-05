@@ -151,3 +151,70 @@ a{
   height: 40px;
   object-fit: contain;
 }
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 30px;
+  }
+
+  .features {
+    padding: 40px 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-buttons button {
+    margin-bottom: 10px;
+  }
+
+  /* MOCKUP */
+  .hero-mockup {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  /* FEATURES */
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .feature {
+    max-width: 100%;
+  }
+}
+
