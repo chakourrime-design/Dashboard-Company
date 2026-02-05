@@ -240,4 +240,96 @@ button:hover {
   }
   body { background: white !important; }
   h2, p { color: black !important; }
+
+}
+/* =========================
+   RESPONSIVE AMÉLIORÉ
+========================= */
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .main {
+    padding: 25px;
+  }
+
+  .section-box,
+  .config-section {
+    padding: 20px;
+  }
+
+  .canvas-wrapper {
+    height: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+  }
+
+  /* SIDEBAR → barre horizontale */
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 15px;
+  }
+
+  .logo-container {
+    margin-bottom: 0;
+  }
+
+  .sidebar nav {
+    display: flex;
+    gap: 10px;
+  }
+
+  .sidebar nav a {
+    display: block;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .logout {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* MAIN */
+  .main {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  /* TOPBAR */
+  .topbar {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  /* FORM */
+  .input-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CHARTS */
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .canvas-wrapper {
+    height: 260px;
+  }
+
+  h2 {
+    font-size: 1.05rem;
+  }
 }
