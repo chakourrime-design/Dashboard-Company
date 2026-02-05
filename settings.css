@@ -136,4 +136,106 @@ input[type="password"] {
   width: 40px;
   height: 40px;
   object-fit: contain;
+
+}
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .main {
+    padding: 25px;
+  }
+
+  .settings-grid {
+    gap: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 9px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+  }
+
+  /* Sidebar → barre horizontale */
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-right: none;
+    border-bottom: 1px solid #022c22;
+    padding: 12px 15px;
+  }
+
+  .sidebar h2 {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .sidebar nav {
+    display: flex;
+    gap: 10px;
+  }
+
+  .sidebar nav a {
+    padding: 8px 10px;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  .logout {
+    margin-top: 0;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  /* MAIN */
+  .main {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  /* Topbar */
+  .topbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Grid */
+  .settings-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* Card */
+  .card {
+    padding: 15px;
+  }
+
+  /* Inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    font-size: 14px;
+  }
+
+  /* Buttons */
+  .save {
+    padding: 10px;
+    font-size: 14px;
+  }
 }
