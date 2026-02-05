@@ -20,4 +20,84 @@ table { width: 100%; border-collapse: collapse; margin-top: 20px; }
 table, th, td { border: 1px solid #022c22; }
 th, td { padding: 8px; text-align: center; }
 th { background: #022c22; color: #22c55e; }
+
 td { background: #0f172a; color: #e5e7eb; }
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .main {
+    padding: 20px;
+  }
+
+  .rh-section {
+    padding: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+  }
+
+  /* SIDEBAR → barre horizontale */
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-right: none;
+    border-bottom: 1px solid #022c22;
+    padding: 12px 15px;
+  }
+
+  .logo-container {
+    margin-bottom: 0;
+  }
+
+  .sidebar nav {
+    display: flex;
+    gap: 10px;
+  }
+
+  .sidebar nav a {
+    padding: 8px 10px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .logout {
+    margin-top: 0;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* MAIN */
+  .main {
+    padding: 20px;
+  }
+
+  /* TOPBAR */
+  .topbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* RH SECTION */
+  .rh-section {
+    padding: 15px;
+  }
+
+  /* TABLE */
+  table {
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+}
