@@ -119,4 +119,80 @@ img{
   border-radius: 5%;
   display: block;
   margin: 0 auto;
+
+}
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 40px;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  /* PANNEAUX */
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .left-panel {
+    text-align: center;
+  }
+
+  .left-panel h1 {
+    font-size: 24px;
+  }
+
+  .left-panel p {
+    font-size: 16px;
+  }
+
+  /* TOGGLE */
+  .toggle {
+    margin-bottom: 20px;
+  }
+
+  /* FORM */
+  .form h2 {
+    text-align: center;
+  }
+
+  .forgot {
+    text-align: center;
+  }
+
+  /* IMAGE */
+  img {
+    width: 160px;
+    height: 160px;
+    margin-top: 15px;
+  }
 }
