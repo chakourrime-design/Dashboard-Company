@@ -36,4 +36,93 @@ th, td { padding: 12px; text-align: left; border-bottom: 1px solid #022c22; font
 th { background: #022c22; color: #22c55e; position: sticky; top: 0; }
 
 /* Canvas Wrapper pour le Graphique */
+
 .canvas-wrapper { position: relative; height: 400px; width: 100%; }
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .main {
+    padding: 30px;
+  }
+
+  .canvas-wrapper {
+    height: 320px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+  }
+
+  /* SIDEBAR devient horizontale */
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-right: none;
+    border-bottom: 1px solid #022c22;
+    padding: 12px 15px;
+  }
+
+  .logo-container {
+    margin-bottom: 0;
+  }
+
+  .sidebar nav {
+    display: flex;
+    gap: 8px;
+  }
+
+  .sidebar nav a {
+    padding: 8px 10px;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  .logout {
+    margin-top: 0;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  /* MAIN */
+  .main {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  /* TOPBAR */
+  .topbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* UPLOAD */
+  .upload-box {
+    flex-direction: column;
+  }
+
+  button#loadSales {
+    width: 100%;
+  }
+
+  /* TABLE */
+  th, td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  /* CHART */
+  .canvas-wrapper {
+    height: 260px;
+  }
+}
