@@ -121,6 +121,10 @@ img{
   margin: 0 auto;
 
 }
+a{
+  text-decoration: none;
+  color: #022c22;
+}
 /* =========================
    RESPONSIVE DESIGN
 ========================= */
@@ -196,3 +200,4 @@ img{
     margin-top: 15px;
   }
 }
+
