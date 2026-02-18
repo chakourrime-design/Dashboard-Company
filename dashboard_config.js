@@ -69,6 +69,7 @@ function renderCharts(salesData, financeData) {
 
     // 3. Mise à jour des stats cards
     document.getElementById('txtTotalSales').innerText = sValues.reduce((a, b) => a + b, 0).toLocaleString();
-    document.getElementById('txtTotalRev').innerText = fRev.reduce((a, b) => a + b, 0).toLocaleString() + " €";
-    document.getElementById('txtTotalBen').innerText = fBen.reduce((a, b) => a + b, 0).toLocaleString() + " €";
+    document.getElementById('txtTotalRev').innerText = fRev.reduce((a, b) => a + b, 0).toLocaleString() + " MAD";
+    document.getElementById('txtTotalBen').innerText = fBen.reduce((a, b) => a + b, 0).toLocaleString() + " MAD";
+
 }
